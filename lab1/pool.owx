@@ -1,0 +1,264 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/antonrasshchektaiev/ontologies/2023/3/pool"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/antonrasshchektaiev/ontologies/2023/3/pool">
+    <Prefix name="" IRI="http://www.semanticweb.org/antonrasshchektaiev/ontologies/2023/3/untitled-ontology-4/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Управління басейном</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Case"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Condition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Depth"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Heater"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stopper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Temp_env"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Temp_water"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Temperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Water_tap"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#depth"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#heater"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#stopper"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#temp_env"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#temp_water"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#water_tap"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasState"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTemperature"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#case1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#case2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#case3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#case4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#close"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#high"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#low"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#normal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#open"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#turn_off"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#turn_on"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Depth"/>
+        <Class IRI="#Case"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Depth"/>
+        <Class IRI="#Condition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Heater"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Heater"/>
+        <Class IRI="#Case"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stopper"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stopper"/>
+        <Class IRI="#Case"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Temp_env"/>
+        <Class IRI="#Case"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Temp_env"/>
+        <Class IRI="#Temperature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Temp_water"/>
+        <Class IRI="#Case"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Temp_water"/>
+        <Class IRI="#Temperature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Temperature"/>
+        <Class IRI="#Condition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Water_tap"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Water_tap"/>
+        <Class IRI="#Case"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Case"/>
+        <NamedIndividual IRI="#case4"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#depth"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#heater"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#stopper"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#temp_env"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#temp_water"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#water_tap"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#depth"/>
+        <Class IRI="#Depth"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#heater"/>
+        <Class IRI="#Heater"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#stopper"/>
+        <Class IRI="#Stopper"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#temp_env"/>
+        <Class IRI="#Temp_env"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#temp_water"/>
+        <Class IRI="#Temp_water"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#water_tap"/>
+        <Class IRI="#Water_tap"/>
+    </ObjectPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasState"/>
+        <Class IRI="#Heater"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasState"/>
+        <Class IRI="#Water_tap"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTemperature"/>
+        <Class IRI="#Temp_env"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTemperature"/>
+        <Class IRI="#Temp_water"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasState"/>
+        <DataOneOf>
+            <Literal>turn_off</Literal>
+            <Literal>turn_on</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTemperature"/>
+        <DataOneOf>
+            <Literal>22</Literal>
+            <Literal>23</Literal>
+            <Literal>24</Literal>
+            <Literal>25</Literal>
+            <Literal>26</Literal>
+            <Literal>27</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Action</IRI>
+        <Literal>Можливі дії для нормалізації умов перебування в басейні</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Case</IRI>
+        <Literal>Інформація щодо прийняття рішень при управлінні басейном</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Condition</IRI>
+        <Literal>Вхідні умови для управління басейном</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
