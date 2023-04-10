@@ -43,7 +43,7 @@
         <DataProperty IRI="#lastName"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#stundents"/>
+        <DataProperty IRI="#students"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Anton"/>
@@ -53,6 +53,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#KM-501"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Olga_Ivanivna"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#Student"/>
@@ -74,6 +77,25 @@
         <Class IRI="#Group"/>
         <NamedIndividual IRI="#KM-501"/>
     </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Teacher"/>
+        <NamedIndividual IRI="#Olga_Ivanivna"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongs_to"/>
+        <NamedIndividual IRI="#Anton"/>
+        <NamedIndividual IRI="#KM-501"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#scheduled_in"/>
+        <NamedIndividual IRI="#Cognitive_Systems"/>
+        <NamedIndividual IRI="#KM-501"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#Olga_Ivanivna"/>
+        <NamedIndividual IRI="#Cognitive_Systems"/>
+    </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#firstName"/>
         <NamedIndividual IRI="#Anton"/>
@@ -84,6 +106,16 @@
         <NamedIndividual IRI="#Anton"/>
         <Literal>Rasshchektaiev</Literal>
     </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#firstName"/>
+        <NamedIndividual IRI="#Olga_Ivanivna"/>
+        <Literal>Olga</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lastName"/>
+        <NamedIndividual IRI="#Olga_Ivanivna"/>
+        <Literal>Artemenko</Literal>
+    </DataPropertyAssertion>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#belongs_to"/>
         <Class IRI="#Student"/>
@@ -117,7 +149,7 @@
         <Class IRI="#Person"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#stundents"/>
+        <DataProperty IRI="#students"/>
         <Class IRI="#Group"/>
     </DataPropertyDomain>
 </Ontology>

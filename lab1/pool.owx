@@ -104,6 +104,10 @@
         <NamedIndividual IRI="#turn_on"/>
     </Declaration>
     <SubClassOf>
+        <Class IRI="#Condition"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Depth"/>
         <Class IRI="#Case"/>
     </SubClassOf>
